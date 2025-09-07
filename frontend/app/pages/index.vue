@@ -4,7 +4,7 @@
       Campaign Budget Tracker
     </h1>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden max-w-4xl mx-auto">
-      <TableView />
+      <CampaignsView />
     </div>
   </div>
 </template>
