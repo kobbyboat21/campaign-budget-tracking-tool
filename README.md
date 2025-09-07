@@ -18,7 +18,7 @@ A full-stack web application for tracking marketing campaign budgets, spend, and
 ### Quick Start
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/campaign-budget-tracking-tool.git
+   git clone https://github.com/kobbyboat21/campaign-budget-tracking-tool.git
    cd campaign-budget-tracking-tool
    ```
 
