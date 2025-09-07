@@ -30,7 +30,7 @@ A full-stack web application for tracking marketing campaign budgets, spend, and
 
 3. Start with Docker Compose
    ```bash
-   docker-compose up -d
+   docker-compose up --build -d
    ```
 
 4. Access the application
