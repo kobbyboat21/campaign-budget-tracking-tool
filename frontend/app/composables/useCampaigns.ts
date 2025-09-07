@@ -1,5 +1,5 @@
 import { ref, computed, reactive, toRefs } from 'vue'
-import type { Campaign } from '~/utils/table/types'
+import type { Campaign } from '~/utils/campaigns/types'
 
 // Create a singleton state that persists across component instances
 const state = reactive({
