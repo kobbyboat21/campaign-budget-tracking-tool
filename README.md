@@ -60,7 +60,7 @@ A full-stack web application for tracking marketing campaign budgets, spend, and
 │                    Django Application                     │
 │                                                           │
 │  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐  │
-│  │   Models    │────►│  ViewSets   │────►│ Serializers │  │
+│  │   Models    │◄────│  ViewSets   │────►│ Serializers │  │
 │  │ - Campaign  │     │ - CRUD API  │     │ - JSON data │  │
 │  └─────────────┘     └──────┬──────┘     └─────────────┘  │
 │        ▲                    │                             │
