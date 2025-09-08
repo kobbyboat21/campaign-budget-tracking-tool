@@ -60,14 +60,15 @@ A full-stack web application for tracking marketing campaign budgets, spend, and
 │                    Django Application                     │
 │                                                           │
 │  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐  │
-│  │   Models    │◄────┤  ViewSets   │◄────┤ Serializers │  │
+│  │   Models    │────►│  ViewSets   │────►│ Serializers │  │
 │  │ - Campaign  │     │ - CRUD API  │     │ - JSON data │  │
 │  └─────────────┘     └──────┬──────┘     └─────────────┘  │
-│                             │                             │
-│  ┌─────────────┐     ┌──────▼──────┐                      │
-│  │    Admin    │     │  URL Routes │                      │
-│  │ - Dashboard │     │ - /api/     │                      │
-│  └─────────────┘     └─────────────┘                      │
+│        ▲                    │                             │
+│        │             ┌──────▼──────┐                      │
+│  ┌─────┴─────┐       │  URL Routes │                      │
+│  │    Admin    │     │ - /api/     │                      │
+│  │ - Dashboard │     └─────────────┘                      │
+│  └─────────────┘                                          │
 └───────────────────────────────────────────────────────────┘
 ```
 
@@ -77,14 +78,15 @@ A full-stack web application for tracking marketing campaign budgets, spend, and
 │                   Nuxt.js Application                     │
 │                                                           │
 │  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐  │
-│  │    Pages    │◄────┤ Components  │◄────┤ Composables │  │
+│  │    Pages    │────►│ Components  │────►│ Composables │  │
 │  │ - index.vue │     │ - campaigns │     │ - API calls │  │
 │  └─────────────┘     └──────┬──────┘     └─────────────┘  │
 │                             │                             │
-│  ┌─────────────┐     ┌──────▼──────┐                      │
-│  │   Assets    │     │    Utils    │                      │
-│  │ - Tailwind  │     │ - Formatters│                      │
-│  └─────────────┘     └─────────────┘                      │
+│                       ┌─────▼──────┐                      │
+│  ┌─────────────┐      │    Utils   │                      │
+│  │   Assets    │      │ - Formatters│                     │
+│  │ - Tailwind  │      └────────────┘                      │
+│  └─────────────┘                                          │
 └───────────────────────────────────────────────────────────┘
 ```
 
